@@ -8,9 +8,10 @@ export const BlogList: React.FC = () => {
   useEffect(() => {
     Promise.all(
       posts.map((post) => {
-        let path = require(`assets/posts/${post}`)
-        if (process.env.NODE_ENV === 'production') path.split('.md')[0]
-        return fetch(path)
+        const path = require(`assets/posts/${post}`)
+        return fetch(
+          process.env.NODE_ENV === 'development' ? path : path.split('.md')[0],
+        )
       }),
     )
       .then((res) => Promise.all(res.map((res) => res.text())))
