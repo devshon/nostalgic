@@ -10,12 +10,12 @@ import { contentFormat, layoutFormat } from 'utils/format'
 
 const BlogDetail: FC = () => {
   const [data, setData] = useState<string>()
-  const path = require(`assets/posts/${decodeURI(window.location.pathname)
+  const path = require(`assets/posts/${window.location.pathname
     .split('/')
     .pop()}`)
 
   useEffect(() => {
-    fetch(path)
+    fetch(process.env.NODE_ENV === 'development' ? path : path.split('.md')[0])
       .then((res) => res.text())
       .then((text) => setData(text))
   }, [])
