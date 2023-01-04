@@ -10,16 +10,17 @@ import { BackgroundImage } from 'components/common/image'
 
 const root = ReactDOM.createRoot(document.getElementById('root') as HTMLElement)
 root.render(
-  // <React.StrictMode>
-  <ThemeProvider theme={theme}>
-    <BackgroundImage
-      url='/images/theme.jpeg'
-      style={{ backgroundSize: 'contain' }}
-    >
-      <App />
-    </BackgroundImage>
-  </ThemeProvider>,
-  // </React.StrictMode>,
+  <React.StrictMode>
+    <ThemeProvider theme={theme}>
+      <BackgroundImage
+        url='/images/theme.jpeg'
+        style={{ backgroundSize: 'contain' }}
+      >
+        <App />
+      </BackgroundImage>
+    </ThemeProvider>
+    ,
+  </React.StrictMode>,
 )
 
 reportWebVitals()
