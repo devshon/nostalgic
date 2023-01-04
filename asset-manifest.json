@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/nostalgic/static/css/main.89eef703.css",
-    "main.js": "/nostalgic/static/js/main.610589f8.js",
+    "main.js": "/nostalgic/static/js/main.ec608d4a.js",
     "static/js/787.eccf1807.chunk.js": "/nostalgic/static/js/787.eccf1807.chunk.js",
     "static/media/PretendardVariable.woff2": "/nostalgic/static/media/PretendardVariable.36b3a87cd98126711b2b.woff2",
-    "static/media/2021년 회고.md": "/nostalgic/static/media/2021년 회고.b7849d0f5a87cc675123.md",
+    "static/media/2021년 회고.md": "/nostalgic/static/media/2021년 회고.fbf74b08700d2baff6cb.md",
     "index.html": "/nostalgic/index.html",
     "main.89eef703.css.map": "/nostalgic/static/css/main.89eef703.css.map",
-    "main.610589f8.js.map": "/nostalgic/static/js/main.610589f8.js.map",
+    "main.ec608d4a.js.map": "/nostalgic/static/js/main.ec608d4a.js.map",
     "787.eccf1807.chunk.js.map": "/nostalgic/static/js/787.eccf1807.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.89eef703.css",
-    "static/js/main.610589f8.js"
+    "static/js/main.ec608d4a.js"
   ]
 }
