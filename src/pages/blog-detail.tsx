@@ -1,7 +1,7 @@
 import { FC, useEffect, useState } from 'react'
 import { Column, Media } from 'components/common/layout'
 import { theme } from 'styles/theme'
-import { BaseText, DescText, HeaderText } from 'components/common/text'
+import { BaseText, HeaderText } from 'components/common/text'
 import { Float } from 'components/common/float'
 import { Frame } from 'components/common/frame'
 import moment from 'moment'
@@ -13,7 +13,7 @@ const BlogDetail: FC = () => {
   const path = require(`assets/posts/${decodeURI(window.location.pathname)
     .split('/')
     .pop()}`)
-
+  console.log(path)
   useEffect(() => {
     fetch(process.env.NODE_ENV === 'development' ? path : path.split('.md')[0])
       .then((res) => res.text())
@@ -45,7 +45,6 @@ const BlogDetail: FC = () => {
             </Column>
             <Column>
               <Preview source={content} />
-              <DescText style={{ display: 'none' }}>{data}</DescText>
             </Column>
           </Column>
         </Media>
